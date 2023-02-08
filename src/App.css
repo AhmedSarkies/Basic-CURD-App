@@ -4,3 +4,11 @@
 .sidebar li {
   text-align: center;
 }
+.card img {
+  max-width: 100px;
+  min-height: 200px;
+  object-fit: contain;
+}
+.test {
+  border: 1px solid;
+}
