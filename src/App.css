@@ -9,6 +9,9 @@
   min-height: 200px;
   object-fit: contain;
 }
+.swal2-cancel.btn.btn-danger {
+  margin-right: 10px !important;
+}
 .test {
   border: 1px solid;
 }

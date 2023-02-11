@@ -28,9 +28,9 @@ function Products() {
         text: `You won't be able to revert ${product.title}!`,
         icon: "warning",
         showCancelButton: true,
+        reverseButtons: true,
         confirmButtonText: "Yes, delete it!",
         cancelButtonText: "No, cancel!",
-        reverseButtons: true,
       })
       .then((result) => {
         if (result.isConfirmed) {
