@@ -14,13 +14,11 @@ function EditProduct() {
   const [image, setImage] = useState("");
   const [rate, setRate] = useState({ rate: 0, count: 0 });
   let navigate = useNavigate();
-
   useEffect(() => {
     axios.get(`${url_api}/${productID}`).then((res) => {
       setProduct(res.data);
     });
   }, []);
-
   const saveChanging = () => {
     axios
       .put(`${url_api}/${productID}`, {
@@ -33,7 +31,6 @@ function EditProduct() {
       })
       .then(() => navigate("/products"));
   };
-
   const formSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -52,7 +49,6 @@ function EditProduct() {
       }
     });
   };
-
   return (
     <>
       <h1>Add Product</h1>
@@ -166,7 +162,7 @@ function EditProduct() {
           />
         </div>
         <div className="mt-4 mb-5">
-          <button className="btn btn-success">Save Editing</button>
+          <button className="btn btn-success">Save Changes</button>
         </div>
       </form>
     </>
