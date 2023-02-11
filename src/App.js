@@ -34,8 +34,8 @@ function App() {
               >
                 <Route path="" element={<Products />} />
                 <Route path="add" element={<AddProduct />} />
-                <Route path="edit" element={<EditProduct />} />
-                <Route path="view" element={<ViewProduct />} />
+                <Route path="edit/:productID" element={<EditProduct />} />
+                <Route path="view/:productID" element={<ViewProduct />} />
               </Route>
             </Routes>
           </div>
