@@ -6,13 +6,13 @@ function EditProduct() {
   let { productID } = useParams();
   const url_api = "http://localhost:9000/products";
   const [product, setProduct] = useState([]);
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
-  const [price, setPrice] = useState(0);
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
-  const [rating, setRating] = useState({ rate: 0, count: 0 });
-  let navigate = useNavigate();
+//   const [title, setTitle] = useState("");
+//   const [category, setCategory] = useState("");
+//   const [price, setPrice] = useState(0);
+//   const [description, setDescription] = useState("");
+//   const [image, setImage] = useState("");
+//   const [rating, setRating] = useState({ rate: 0, count: 0 });
+//   let navigate = useNavigate();
 
   useEffect(() => {
     axios.get(`${url_api}/${productID}`)
