@@ -18,7 +18,7 @@ function EditProduct() {
     axios.get(`${url_api}/${productID}`).then((res) => {
       setProduct(res.data);
     });
-  }, []);
+  }, [productID]);
   const saveChanging = () => {
     axios
       .put(`${url_api}/${productID}`, {
